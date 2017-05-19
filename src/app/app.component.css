@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+}
+.header_nav{
+    height: 90px;
+    line-height: 90px;
+}
+.header_nav>*{
+    float: left;
+}
+.logo{
+    line-height: 75px;
+}
+.logo img{
+    width: 190px;
+    height: 52px;
+    line-height: 52px;
+}
+
+.header_nav_tab>li{
+    padding:0 20px;
+    float: left;
+}
+.header_nav_tab_sec{
+    padding-left:190px;
+    border-top: 1px solid #eee;
+    line-height: 45px;
+}
+.lh_half{
+    line-height: 45px;
+}

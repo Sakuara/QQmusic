@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, input, lengend, li, ol, p, pre, td, textarea, th, ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body,html{
+    min-width: 1240px;
+}
+@media screen and (max-width:1240px){
+    body,html{
+        min-width:1024px;
+    }
+}
+a{
+    text-decoration: none;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear:both;
+    height: 0;
+    visibility: hidden;
+}
+.lt{
+    float:left;
+}
+.rt{
+    float:right;
+}

@@ -1,15 +1,68 @@
 <!--header nav-->
 <header>  
     <div class="container">
-        <nav class="row">
-            <div class="logo col-2">
-                <a href="#">QQ音乐</a>
+        <nav class="header_nav clearfix">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </a>
+            </h1>
+            <ul class="header_nav_tab1 header_nav_tab clearfix">
+                <li (click)="show = true">
+                    <a class="hm_rm" [routerLink]="['/home']">音乐馆</a>
+                </li>
+                <li (click)="show = false">
+                    <a class="hm_rm" [routerLink]="['/local']">我的音乐</a>
+                </li>
+                <li><a href="#">下载客户端</a></li>
+                <li><a href="#">VIP</a></li>
+            </ul>
+            <div class="mod_search_input">
+                <input type="text" class="search_input_input lh_half" placeholder="陈奕迅">
             </div>
-            <div class="header_nav col-6">
-                <a [routerLink]="['/home']">音乐馆</a>
-                <a [routerLink]="['/local']">我的音乐</a>
-            </div>
+            <aside class="header_aside">
+                <a href="#">登录</a>
+                <button class="lh_half">开通绿钻豪华版</button>
+                <button class="lh_half">开通付费包</button>
+            </aside>
+        </nav>
+        <nav class="header-nav clearfix" *ngIf="show">
+            <ul class="header_nav_tab_sec header_nav_tab clearfix">
+                <li>
+                    <a [routerLink]="['/index']">首页</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/singer']">歌手</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/album']">专辑</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/ranking']">排行榜</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/playlist']">分类歌单</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/mv']">MV</a>
+                </li>
+            </ul>
         </nav>
     </div>
 </header>
+<!--content-->
 <router-outlet></router-outlet>
+
+<!--footer-->
+<footer>
+    <div class="top">
+        123
+    </div>
+    <div class="down">
+        <ul>
+            <li>@copyright</li>
+        </ul>
+        <h6>copyright @1998-2017</h6>
+        <p>Tencent Company</p>
+    </div>
+</footer>
