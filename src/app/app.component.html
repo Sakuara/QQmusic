@@ -1,7 +1,7 @@
 <!--header nav-->
 <header>  
     <div class="container">
-        <nav class="header_nav clearfix">
+        <nav class="header_nav header_nav_fir clearfix">
             <h1 class="logo">
                 <a href="#">
                     <img src="./assets/img/logo.png" alt="logo">
@@ -18,17 +18,17 @@
                 <li><a href="#">VIP</a></li>
             </ul>
             <div class="mod_search_input">
-                <input type="text" class="search_input_input lh_half" placeholder="陈奕迅">
+                <input type="text" class="search_input_input" placeholder="陈奕迅">
             </div>
             <aside class="header_aside">
                 <a href="#">登录</a>
-                <button class="lh_half">开通绿钻豪华版</button>
+                <button class="lh_half active_btn">开通绿钻豪华版</button>
                 <button class="lh_half">开通付费包</button>
             </aside>
         </nav>
-        <nav class="header-nav clearfix" *ngIf="show">
+        <nav class="header_nav clearfix" *ngIf="show">
             <ul class="header_nav_tab_sec header_nav_tab clearfix">
-                <li>
+                <li class="active_clr">
                     <a [routerLink]="['/index']">首页</a>
                 </li>
                 <li>

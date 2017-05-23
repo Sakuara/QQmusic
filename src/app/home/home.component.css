@@ -1,4 +1,6 @@
 .home_slide{
     height: 734px;
     background:url('../../assets/img/bg_slide_1.jpg') repeat-x;
+    text-align: center;
+    color: #fff;
 }

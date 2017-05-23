@@ -1,15 +1,17 @@
 a{
     text-decoration: none;
+    color: #000;
 }
-.header_nav{
+.header_nav_fir{
     height: 90px;
     line-height: 90px;
 }
-.header_nav>*{
+.header_nav_fir>*{
     float: left;
 }
 .logo{
-    padding-right: 20px;
+    padding-right: 36px;
+    height: 90px;
 }
 .logo img{
     width: 190px;
@@ -19,17 +21,23 @@ a{
 .header_nav_tab>li{ 
     float: left;
 }
+.header_nav_tab1{
+    padding-right: 22px;
+}
 .header_nav_tab1 a{
      padding:0 20px;
      font-size: 18px;
 }
 .header_nav_tab_sec{
-    padding-left:190px;
+    padding-left:247px;
     border-top: 1px solid #eee;
-    line-height: 45px;
+    line-height: 51px;
 }
-.lh_half{
-    line-height: 45px;
+.header_nav_tab_sec li{
+    padding: 0 20px;
+}
+.header_nav_tab_sec li a{
+    font-size: 14px;
 }
 .hm_rm{
     height: 90px;
@@ -39,4 +47,45 @@ a{
 }
 .active a{
     color: white;
+}
+.header_nav li:hover a,
+.active_clr a,
+.header_aside a:hover{
+    color: #31c27c;
+}
+.header_nav li[class="active"]:hover a{
+    color: #fff;
+}
+.mod_search_input input{
+    border: 1px solid #c9c9c9;
+    line-height: 36px;
+    text-indent: 20px;
+    border-radius: 3px;
+    padding-right: 15px;
+    width: 213px;
+}
+.header_aside a{
+    padding: 0 20px;
+}
+.lh_half{
+    padding: 0 10px;
+    margin-right: 5px;
+    line-height: 37px;
+    border: 1px solid #c9c9c9;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.active_btn{
+    line-height: 39px;
+    border: none;
+    background-color: #31c27c;
+    color: #fff;
+    opacity: 0.9;
+}
+.lh_half:hover{
+    background-color: #ededed;
+}
+.active_btn:hover{
+    background-color: #2ca66c;
 }

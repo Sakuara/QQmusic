@@ -4,13 +4,14 @@ import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 import { homeRoutes } from './home.routes';
+import { SlideStaticComponent } from './slide-static/slide-static.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(homeRoutes)
   ],
-  declarations: [],
+  declarations: [SlideStaticComponent],
   exports: [],
   providers: []
 })
