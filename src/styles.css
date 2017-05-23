@@ -28,3 +28,7 @@ a{
 .rt{
     float:right;
 }
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
