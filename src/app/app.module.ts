@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { appRouter } from './app.routes';
 
@@ -11,7 +12,7 @@ import { HomeModule } from './home/home.module';
 
 import { AppComponent } from './app.component';
 import { MyMusicComponent } from './my-music/my-music.component';
-import { HomeComponent } from "app/home/home.component";
+// import { HomeComponent } from "app/home/home.component";
 import { SingerComponent } from './singer/singer.component';
 import { AlbumComponent } from './album/album.component';
 import { RankingComponent } from './ranking/ranking.component';
@@ -22,7 +23,7 @@ import { MvComponent } from './mv/mv.component';
   declarations: [
     AppComponent, 
     MyMusicComponent,
-    HomeComponent,
+    // HomeComponent,
     SingerComponent,
     AlbumComponent,
     RankingComponent,
@@ -31,8 +32,10 @@ import { MvComponent } from './mv/mv.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+    HomeModule,
     RouterModule.forRoot(appRouter)
   ],
   providers: [],
